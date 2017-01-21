@@ -15,7 +15,6 @@ a {
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
     text-align: center;
-    min-height: 300px;
 }
 .content p {
     margin: 1em;
