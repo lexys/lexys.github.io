@@ -1,0 +1,42 @@
+body {
+    background: #f0f5ef;
+}
+p {
+    font-family: 'Roboto Mono', monospace;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.centered p {
+    margin: 1em;
+}
+.logo {
+    max-width: 200px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+.footer p {
+    padding: 1em;
+}
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari*/
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
