@@ -58,33 +58,26 @@ a:hover {
     max-width: 12em;
 }
 .product {
-    display: none;
+    position: absolute;
+    opacity: .2;
+    max-width: 10em;
+    transition: opacity .8s ease-in-out;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+.product:hover {
+    opacity: 1;
 }
 .product-lexon {
-    display: block;
-    position: absolute;
     top: -4.3em;
     left: 10.5em;
-    max-width: 10em;
-    opacity: .1;
-    transition: opacity .8s ease-in-out;
-}
-.product-lexon:hover {
-    opacity: 1;
-
 }
 .product-lexide {
-    display: block;
-    position: absolute;
     top: 9.9em;
     left: 7.1em;
-    max-width: 10em;
-    opacity: .1;
-    transition: opacity .8s ease-in-out;
-}
-.product-lexide:hover {
-    opacity: 1;
-
 }
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
@@ -95,3 +88,29 @@ a:hover {
     user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
+@keyframes fadein {
+    from { opacity: 0; max-width: 8em; }
+    to   { opacity: .2; max-width: 10em; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; max-width: 8em; }
+    to   { opacity: .2; max-width: 10em; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; max-width: 8em; }
+    to   { opacity: .2; max-width: 10em; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; max-width: 8em; }
+    to   { opacity: .2; max-width: 10em; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; max-width: 8em; }
