@@ -1,4 +1,4 @@
-body {
+body, content, footer {
     background: #f0f5ef;
 }
 p {
@@ -8,15 +8,16 @@ a {
     color: black;
     text-decoration: none;
 }
-.centered {
+.content {
     position: fixed;
     top: 50%;
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
     text-align: center;
+    min-height: 300px;
 }
-.centered p {
+.content p {
     margin: 1em;
 }
 .logo {
@@ -24,12 +25,12 @@ a {
 }
 .footer {
     position: absolute;
-    bottom: 0;
+    bottom: 1em;
     text-align: center;
     width: 100%;
 }
 .footer p {
-    padding: 1em;
+    display: inline;
 }
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
