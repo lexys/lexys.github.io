@@ -1,5 +1,5 @@
 body, content, footer {
-    background: #f0f5ef;
+    background: #f7f7f7;
 }
 p {
     font-family: 'Roboto Mono', monospace;
@@ -7,6 +7,9 @@ p {
 a {
     color: black;
     text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
 .content {
     position: fixed;
@@ -20,16 +23,68 @@ a {
     margin: 1em;
 }
 .logo {
-    max-width: 200px;
+    max-width: 35em;
 }
-.footer {
-    position: absolute;
+.footer, .header {
+    position: fixed;
     bottom: 1em;
     text-align: center;
     width: 100%;
 }
+.header {
+    bottom: auto;
+    top: 1em;
+    left: 1em;
+    text-align: left;
+}
 .footer p {
     display: inline;
+}
+.brand-name {
+    font-size: 3.1em;
+    letter-spacing: -3px;
+}
+.brand-lex {
+    color: #d48207;
+}
+.brand-claim {
+    font-size: 1em;
+    line-height: 1.7em;
+}
+.collage {
+    position relative;
+}
+.logo {
+    max-width: 12em;
+}
+.product {
+    display: none;
+}
+.product-lexon {
+    display: block;
+    position: absolute;
+    top: -4.3em;
+    left: 10.5em;
+    max-width: 10em;
+    opacity: .1;
+    transition: opacity .8s ease-in-out;
+}
+.product-lexon:hover {
+    opacity: 1;
+
+}
+.product-lexide {
+    display: block;
+    position: absolute;
+    top: 9.9em;
+    left: 7.1em;
+    max-width: 10em;
+    opacity: .1;
+    transition: opacity .8s ease-in-out;
+}
+.product-lexide:hover {
+    opacity: 1;
+
 }
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
