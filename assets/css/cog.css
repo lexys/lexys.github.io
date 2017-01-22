@@ -1,0 +1,259 @@
+/* line 18, ../sass/cog.sass */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes clockwise {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes clockwise {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes counter-clockwise {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@-moz-keyframes counter-clockwise {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+/* line 42, ../sass/cog.sass */
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -100px;
+  height: 150px;
+  width: 200px;
+  margin-top: -75px;
+}
+
+/* line 51, ../sass/cog.sass */
+.gearbox {
+  height: 150px;
+  width: 200px;
+  position: relative;
+  border: none;
+}
+/* line 58, ../sass/cog.sass */
+.gearbox .overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  -moz-transition: background 0.2s;
+  -o-transition: background 0.2s;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+}
+/* line 68, ../sass/cog.sass */
+.gearbox.turn .overlay {
+  background: transparent;
+}
+
+/* line 77, ../sass/cog.sass */
+.gear {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  -moz-box-shadow: 0px -1px 0px 0px #333333, 0px 1px 0px 0px black;
+  -webkit-box-shadow: 0px -1px 0px 0px #333333, 0px 1px 0px 0px black;
+  box-shadow: 0px -1px 0px 0px #333333, 0px 1px 0px 0px black;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+}
+/* line 84, ../sass/cog.sass */
+.gear.large {
+  height: 120px;
+  width: 120px;
+  -moz-border-radius: 60px;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+}
+/* line 89, ../sass/cog.sass */
+.gear.large:after {
+  height: 96px;
+  width: 96px;
+  -moz-border-radius: 48px;
+  -webkit-border-radius: 48px;
+  border-radius: 48px;
+  margin-left: -48px;
+  margin-top: -48px;
+}
+/* line 99, ../sass/cog.sass */
+.gear.one {
+  top: -10px;
+  left: 126px;
+}
+/* line 103, ../sass/cog.sass */
+.gear.two {
+  top: 116px;
+  left: 104px;
+}
+/* line 107, ../sass/cog.sass */
+.gear.four {
+  top: 10px;
+  left: 10px;
+}
+/* line 111, ../sass/cog.sass */
+.gear.four:after {
+  background-image: url("/assets/img/lexys-lady.png");
+  background-repeat: no-repeat;
+  background-size: 84px;
+  background-position: 6px;
+}
+/* line 117, ../sass/cog.sass */
+.gear:after {
+  content: "";
+  position: absolute;
+  height: 36px;
+  width: 36px;
+  -moz-border-radius: 36px;
+  -webkit-border-radius: 36px;
+  border-radius: 36px;
+  background-color: #f7f7f7;
+  top: 50%;
+  left: 50%;
+  margin-left: -18px;
+  margin-top: -18px;
+  z-index: 3;
+}
+
+/* line 131, ../sass/cog.sass */
+.gear-inner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* line 141, ../sass/cog.sass */
+.large .gear-inner {
+  -moz-border-radius: 60px;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+}
+/* line 144, ../sass/cog.sass */
+.gear.one .gear-inner {
+  -webkit-animation: clockwise 12s infinite linear;
+  -moz-animation: clockwise 12s infinite linear;
+}
+/* line 148, ../sass/cog.sass */
+.gear.two .gear-inner {
+  -webkit-animation: clockwise 12s infinite linear;
+  -moz-animation: clockwise 12s infinite linear;
+}
+/* line 152, ../sass/cog.sass */
+.gear.four .gear-inner {
+  -webkit-animation: counter-clockwise 24s infinite linear;
+  -moz-animation: counter-clockwise 24s infinite linear;
+}
+/* line 156, ../sass/cog.sass */
+.gear-inner .bar {
+  background: #000;
+  height: 16px;
+  width: 76px;
+  position: absolute;
+  left: 50%;
+  margin-left: -38px;
+  top: 50%;
+  margin-top: -8px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* line 174, ../sass/cog.sass */
+.large .gear-inner .bar {
+  margin-left: -68px;
+  width: 136px;
+}
+/* line 179, ../sass/cog.sass */
+.gear-inner .bar:nth-child(2) {
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+/* line 182, ../sass/cog.sass */
+.gear-inner .bar:nth-child(3) {
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+/* line 185, ../sass/cog.sass */
+.gear-inner .bar:nth-child(4) {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+/* line 188, ../sass/cog.sass */
+.gear-inner .bar:nth-child(5) {
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+/* line 191, ../sass/cog.sass */
+.gear-inner .bar:nth-child(6) {
+  -moz-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  -webkit-transform: rotate(150deg);
+  transform: rotate(150deg);
+}

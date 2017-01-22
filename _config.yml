@@ -4,3 +4,4 @@ author:
 path:
 url:  'http://lexys.org'
 markdown: kramdown
+exclude: ['assets/sass']

@@ -2,10 +2,11 @@
 <html lang=en>
 <head>
     <meta charset=utf-8>
+    <link rel="shortcut icon" href="{{ '/assets/img/lexys.ico' | prepend: site.path }}" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-    <link rel="stylesheet" href="{{ '/assets/reset.css' | prepend: site.path }}?{{site.time | date: '%s%N'}}" type="text/css">
-    <link rel="stylesheet" href="{{ '/assets/style.css' | prepend: site.path }}?{{site.time | date: '%s%N'}}" type="text/css">
-    <link rel="shortcut icon" href="{{ '/assets/lexys.ico' | prepend: site.path }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/reset.css' | prepend: site.path }}?{{site.time | date: '%s%N'}}" type="text/css">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | prepend: site.path }}?{{site.time | date: '%s%N'}}" type="text/css">
+    <link rel="stylesheet" href="{{ '/assets/css/cog.css' | prepend: site.path }}?{{site.time | date: '%s%N'}}" type="text/css">
     <title>{{ site.title }} - {{ page.title }}</title>
 </head>
 <body class="noselect">
@@ -24,6 +25,6 @@
         <p>|</p>
         <p><a href="https://slack.lexys.org" target="_blank">slack.lexys.org</a></p>
     </div>
-    <script src="{{ '/assets/site.js' | prepend: site.path }}?{{site.time | date: '%s%N'}}"></script>
+    <script src="{{ '/assets/js/site.js' | prepend: site.path }}?{{site.time | date: '%s%N'}}"></script>
 </body>
 </html>
