@@ -70,9 +70,9 @@ $gearbox-height: 150px
 
 $gear-color: #000
 
-$gear-size: 60px
+$gear-size: 120px
 
-$large-gear-size: $gear-size * 2
+$large-gear-size: $gear-size * 1.5
 
 .gear
   position: absolute
@@ -97,12 +97,19 @@ $large-gear-size: $gear-size * 2
   $center: 10px
 
   &.one
-    top: $center - 20px
-    left: $center + 116px
+    top: $center - 51px
+    left: $center + 170px
+    cursor: pointer
+
+    &:after
+      background-image: url('/assets/img/lexon.png')
+      background-repeat: no-repeat
+      background-size: $gear-size * .6 + 14
+      background-position: 5px
 
   &.two
-    top: $center + 106px
-    left: $center + 94px
+    top: $center + 175px
+    left: $center + 154px
 
   &.four
     top: $center
@@ -111,7 +118,7 @@ $large-gear-size: $gear-size * 2
     &:after
       background-image: url('/assets/img/lexys-lady.png')
       background-repeat: no-repeat
-      background-size: ($gear-size * 1.4)
+      background-size: $large-gear-size * .8
       background-position: 6px
 
   &:after
@@ -119,7 +126,7 @@ $large-gear-size: $gear-size * 2
     position: absolute
     height: $gear-size - 24px
     width: $gear-size - 24px
-    +border-radius(36px)
+    +border-radius($gear-size / 2)
     background-color: $lexys-white
     // border: 1px solid lighten($gear-color, 10%)
     top: 50%
@@ -154,8 +161,8 @@ $large-gear-size: $gear-size * 2
     -moz-animation: counter-clockwise 24s infinite linear
 
   .bar
-    $bar-width: 16px
-    $bar-height: 8px
+    $bar-width: 21px
+    $bar-height: 10px
 
     $actual-height: $bar-width
     $actual-width: ($bar-height * 2) + $gear-size
@@ -172,7 +179,7 @@ $large-gear-size: $gear-size * 2
     border-right: 1px solid white(0.1)
 
     .large &
-      $large-bar-width: ($bar-height * 2) + ($gear-size * 2)
+      $large-bar-width: ($bar-height * 2) + ($gear-size * 1.5)
       margin-left: -($large-bar-width / 2)
       width: $large-bar-width
 
