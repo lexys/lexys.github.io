@@ -140,25 +140,33 @@
   background-repeat: no-repeat;
   background-size: 86px;
   background-position: 5px;
+  transition: all 3s;
 }
-/* line 110, ../sass/cog.sass */
+/* line 111, ../sass/cog.sass */
+.gear.one:hover:after {
+  background-image: url("/assets/img/lexon-active2.png");
+  background-repeat: no-repeat;
+  background-position: 5px;
+}
+/* line 116, ../sass/cog.sass */
 .gear.two {
   top: 185px;
   left: 164px;
 }
-/* line 114, ../sass/cog.sass */
+/* line 120, ../sass/cog.sass */
 .gear.four {
   top: 10px;
   left: 10px;
 }
-/* line 118, ../sass/cog.sass */
+/* line 124, ../sass/cog.sass */
 .gear.four:after {
   background-image: url("/assets/img/lexys-lady.png");
   background-repeat: no-repeat;
   background-size: 144px;
   background-position: 6px;
+  transition: all 3s;
 }
-/* line 124, ../sass/cog.sass */
+/* line 131, ../sass/cog.sass */
 .gear:after {
   content: "";
   position: absolute;
@@ -175,7 +183,7 @@
   z-index: 3;
 }
 
-/* line 138, ../sass/cog.sass */
+/* line 145, ../sass/cog.sass */
 .gear-inner {
   position: relative;
   height: 100%;
@@ -188,28 +196,28 @@
   border-radius: 60px;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
-/* line 148, ../sass/cog.sass */
+/* line 155, ../sass/cog.sass */
 .large .gear-inner {
   -moz-border-radius: 90px;
   -webkit-border-radius: 90px;
   border-radius: 90px;
 }
-/* line 151, ../sass/cog.sass */
+/* line 158, ../sass/cog.sass */
 .gear.one .gear-inner {
   -webkit-animation: clockwise 12s infinite linear;
   -moz-animation: clockwise 12s infinite linear;
 }
-/* line 155, ../sass/cog.sass */
+/* line 162, ../sass/cog.sass */
 .gear.two .gear-inner {
   -webkit-animation: clockwise 12s infinite linear;
   -moz-animation: clockwise 12s infinite linear;
 }
-/* line 159, ../sass/cog.sass */
+/* line 166, ../sass/cog.sass */
 .gear.four .gear-inner {
   -webkit-animation: counter-clockwise 24s infinite linear;
   -moz-animation: counter-clockwise 24s infinite linear;
 }
-/* line 163, ../sass/cog.sass */
+/* line 170, ../sass/cog.sass */
 .gear-inner .bar {
   background: #000;
   height: 21px;
@@ -225,40 +233,40 @@
   border-left: 1px solid rgba(255, 255, 255, 0.1);
   border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
-/* line 181, ../sass/cog.sass */
+/* line 188, ../sass/cog.sass */
 .large .gear-inner .bar {
   margin-left: -100px;
   width: 200px;
 }
-/* line 186, ../sass/cog.sass */
+/* line 193, ../sass/cog.sass */
 .gear-inner .bar:nth-child(2) {
   -moz-transform: rotate(60deg);
   -ms-transform: rotate(60deg);
   -webkit-transform: rotate(60deg);
   transform: rotate(60deg);
 }
-/* line 189, ../sass/cog.sass */
+/* line 196, ../sass/cog.sass */
 .gear-inner .bar:nth-child(3) {
   -moz-transform: rotate(120deg);
   -ms-transform: rotate(120deg);
   -webkit-transform: rotate(120deg);
   transform: rotate(120deg);
 }
-/* line 192, ../sass/cog.sass */
+/* line 199, ../sass/cog.sass */
 .gear-inner .bar:nth-child(4) {
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-/* line 195, ../sass/cog.sass */
+/* line 202, ../sass/cog.sass */
 .gear-inner .bar:nth-child(5) {
   -moz-transform: rotate(30deg);
   -ms-transform: rotate(30deg);
   -webkit-transform: rotate(30deg);
   transform: rotate(30deg);
 }
-/* line 198, ../sass/cog.sass */
+/* line 205, ../sass/cog.sass */
 .gear-inner .bar:nth-child(6) {
   -moz-transform: rotate(150deg);
   -ms-transform: rotate(150deg);
